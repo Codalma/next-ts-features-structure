@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  web:
+    image: ${DEV_IMAGE_NAME} # Specify the image name
+    container_name: ${DEV_CONTAINER_NAME} # Set the container name
+    build: # Build configuration for the container
+      context: . # Set the build context to the current directory
+      target: dev # Specify the target build stage
+    ports:
+      - ${DEV_PORT}:${DEV_EXPOSED_PORT} # Map the container's exposed port to the host's port
+    environment:
+      - NODE_ENV=development # Set the NODE_ENV environment variable to 'development'
+    volumes:
+      - .:/usr/src/app/next # Mount the current directory to the container's '/usr/src/app/next' directory
+    restart: on-failure # Restart the container automatically on failure
+    stop_signal: SIGINT # Specify the signal to send to the container when stopping
+    stop_grace_period: 30s # Set the time to wait for the container to stop gracefully

@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    image: ${IMAGE_NAME} # Specify the image name for the container
+    container_name: ${CONTAINER_NAME} # Set the container name
+    build: # Build configuration for the container
+      context: . # Set the build context to the current directory
+      target: base # Specify the target build stage
+

@@ -1,0 +1,13 @@
+# IDE
+.idea
+
+# DEPENDENCIES
+node_modules
+
+# FOLDERS
+.next
+out
+coverage
+
+# FILES
+README.md

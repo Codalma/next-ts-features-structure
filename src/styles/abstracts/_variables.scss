@@ -1,0 +1,30 @@
+/*-----------------------*\
+        VARIABLES
+\*---------------------- */
+
+// Colors
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #f5f5f5;
+
+// Fonts
+$base-font-family: Arial, sans-serif;
+$heading-font-family: 'Roboto', sans-serif;
+
+// Dimensions
+$container-width: 1200px;
+$padding-small: 10px;
+$margin-medium: 20px;
+
+// Breakpoints
+$mobile-breakpoint: 576px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 992px;
+
+// Z-Index
+$modal-z-index: 1000;
+$dropdown-z-index: 200;
+
+// Transitions
+$transition-duration: 0.3s;
+$transition-easing: ease-in-out;
